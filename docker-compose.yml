@@ -1,0 +1,12 @@
+version: '2.0'
+services:
+  jupyter:
+    build: .
+    volumes:
+      - /:/data
+    ports:
+      - 8888:8888
+    restart: always
+    network_mode: "host"
+
+
